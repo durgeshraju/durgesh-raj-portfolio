@@ -2,6 +2,25 @@
 /* ================================
    Modern CSS Reset contains - (reset + variables + typography)
    ================================ */
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #1f6ae1;
+  --primary-foreground: #ffffff;
+  --primary-hover: #174fcf;
+  --secondary: #f7f9fc;
+  --secondary-foreground: #0f3d5e;
+  --muted: #f7f9fc;
+  --muted-foreground: #4a4a4a;
+  --border: #e6e6e6;
+  --deep-blue: #0f3d5e;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 9999px;
+  --shadow-sm: 0 2px 8px rgba(15, 61, 94, 0.05);
+  --shadow-lg: 0 12px 32px rgba(15, 61, 94, 0.08);
+}
 
 /* Box sizing rules */
 *,
