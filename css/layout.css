@@ -9,9 +9,26 @@
   --pad: 24px;
 }
 
+/* Shared container for all breakpoints */
 .container {
   width: 100%;
   max-width: var(--max);
   margin: 0 auto;
   padding: var(--pad-y) var(--pad);
+}
+
+/* Tablet: tighten horizontal padding */
+@media (max-width: 960px) {
+  :root {
+    --pad-y: 56px;
+    --pad: 20px;
+  }
+}
+
+/* Mobile: smaller horizontal and vertical padding */
+@media (max-width: 720px) {
+  :root {
+    --pad-y: 48px;
+    --pad: 16px;
+  }
 }
