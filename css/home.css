@@ -711,3 +711,149 @@
     font-size: 15px;
   }
 }
+
+/* ================================
+   Homepage: Services section
+   ================================ */
+.services-section {  
+    background-color: #F8FAFC;
+}
+
+.services-section .section-header {
+  margin-bottom: 48px;
+}
+
+.services-section .section-title {
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.services-section .section-subtitle {
+  font-size: 18px;
+  color: var(--muted-foreground);
+  margin: 0;
+  max-width: 600px;
+}
+
+.services-section .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.services-section .service-card {
+  background: var(--card);
+  border: 1px solid #e9effb;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 12px 32px rgba(15, 61, 94, 0.06);
+}
+
+.services-section .service-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eef4ff;
+  color: var(--accent);
+}
+
+.services-section .service-icon iconify-icon {
+  font-size: 20px;
+}
+
+.services-section .service-card .card-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.services-section .card-desc {
+  margin: 0;
+  font-size: 15px;
+  color: #5f6b7b;
+}
+
+.services-section .check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.services-section .check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.services-section .arrow-icon {
+  font-size: 14px;
+  color: #475569;
+}
+
+@media (max-width: 720px) {
+  .services-section {
+    padding: 32px 16px;
+  }
+
+  .services-section .section-title {
+    font-size: 30px;
+  }
+
+  .services-section .service-card {
+    padding: 28px 24px;
+  }
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background: #f0fdfa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-desc {
+  font-size: 15px;
+  color: var(--muted-foreground);
+  margin-bottom: 8px;
+}
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #475569;
+}
