@@ -11,6 +11,7 @@
     <title>Durgesh Raj | Portfolio</title>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -27,17 +28,18 @@
           <li class="nav-dropdown">
             <a
               class="nav-item nav-item-dropdown"
-              href="#services"
+              href="#"
               aria-haspopup="true"
               aria-expanded="false"
             >
               <span class="nav-item-label">Services</span>
             </a>
             <ul class="dropdown-menu" aria-label="Services submenu">
-              <li><a class="dropdown-item is-active" href="#services">Web Development</a></li>
-              <li><a class="dropdown-item" href="#services">UI/UX Implementation</a></li>
-              <li><a class="dropdown-item" href="#services">Performance Audit</a></li>
-              <li><a class="dropdown-item" href="#services">Technical Strategy</a></li>
+              <li><a class="dropdown-item is-active" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">WordPress Development</a></li>
+              <li><a class="dropdown-item" href="#">Frontend Development</a></li>
+              <li><a class="dropdown-item" href="#">UX & Conversion Optimization</a></li>
+              <li><a class="dropdown-item" href="#">Performance & SEO Foundations</a></li>              
             </ul>
           </li>
           <li><a class="nav-item" href="#case-studies">Case Studies</a></li>
@@ -54,53 +56,6 @@
       </nav>
     </header>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
-    <script>
-      (() => {
-        const nav = document.querySelector(".navbar");
-        const toggle = document.querySelector(".menu-toggle");
-        const links = document.querySelector(".nav-links");
-        const dropdownToggles = document.querySelectorAll(".nav-dropdown > .nav-item-dropdown");
-        const mqMobile = window.matchMedia("(max-width: 720px)");
-
-        if (!nav || !toggle || !links) return;
-
-        const closeMenu = () => {
-          links.classList.remove("is-open");
-          nav.classList.remove("is-open");
-          toggle.setAttribute("aria-expanded", "false");
-          document.querySelectorAll(".nav-dropdown.is-open").forEach((item) => item.classList.remove("is-open"));
-        };
-
-        toggle.addEventListener("click", () => {
-          const isOpen = links.classList.toggle("is-open");
-          nav.classList.toggle("is-open", isOpen);
-          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-        });
-
-        dropdownToggles.forEach((link) => {
-          link.addEventListener("click", (evt) => {
-            if (!mqMobile.matches) return;
-            evt.preventDefault();
-            const parent = link.closest(".nav-dropdown");
-            const isOpen = parent.classList.toggle("is-open");
-            if (!isOpen) {
-              parent.classList.remove("is-open");
-            }
-          });
-        });
-
-        document.addEventListener("click", (evt) => {
-          if (!nav.contains(evt.target)) {
-            closeMenu();
-          }
-        });
-
-        document.addEventListener("keydown", (evt) => {
-          if (evt.key === "Escape") {
-            closeMenu();
-          }
-        });
-      })();
-    </script>
+    <script src="js/nav.js" defer></script>
   </body>
 </html>
