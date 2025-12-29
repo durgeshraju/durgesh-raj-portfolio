@@ -2,3 +2,16 @@
 /* ================================
     grid, containers, sections
    ================================ */
+
+:root {
+  --max: 1320px;
+  --pad-y: 64px;
+  --pad: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: var(--pad-y) var(--pad);
+}

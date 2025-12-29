@@ -3,9 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Durgesh Raj - frontend consultant delivering UI/UX, performance-focused web solutions, and full-stack experiences that drive business results."
+    />
+    <meta name="robots" content="index, follow" />
     <title>Durgesh Raj | Portfolio</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="logo" href="#home" aria-label="Durgesh Raj home">
+          <span class="logo-mark" aria-hidden="true">
+            <iconify-icon icon="lucide:code-2" style="font-size: 16px"></iconify-icon>
+          </span>
+          <span class="logo-text">DURGESH RAJ</span>
+        </a>
+        <ul class="nav-links">
+          <li><a class="nav-item" href="#home" aria-current="page">Home</a></li>
+          <li class="nav-dropdown">
+            <a
+              class="nav-item nav-item-dropdown"
+              href="#services"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="nav-item-label">Services</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Services submenu">
+              <li><a class="dropdown-item is-active" href="#services">Web Development</a></li>
+              <li><a class="dropdown-item" href="#services">UI/UX Implementation</a></li>
+              <li><a class="dropdown-item" href="#services">Performance Audit</a></li>
+              <li><a class="dropdown-item" href="#services">Technical Strategy</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-item" href="#case-studies">Case Studies</a></li>
+          <li><a class="nav-item" href="#about">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn-primary header-cta" href="#contact">
+            Get In Touch
+          </a>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+    <script>
+      (() => {
+        const nav = document.querySelector(".navbar");
+        const toggle = document.querySelector(".menu-toggle");
+        const links = document.querySelector(".nav-links");
+        const dropdownToggles = document.querySelectorAll(".nav-dropdown > .nav-item-dropdown");
+        const mqMobile = window.matchMedia("(max-width: 720px)");
+
+        if (!nav || !toggle || !links) return;
+
+        const closeMenu = () => {
+          links.classList.remove("is-open");
+          nav.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+          document.querySelectorAll(".nav-dropdown.is-open").forEach((item) => item.classList.remove("is-open"));
+        };
+
+        toggle.addEventListener("click", () => {
+          const isOpen = links.classList.toggle("is-open");
+          nav.classList.toggle("is-open", isOpen);
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        dropdownToggles.forEach((link) => {
+          link.addEventListener("click", (evt) => {
+            if (!mqMobile.matches) return;
+            evt.preventDefault();
+            const parent = link.closest(".nav-dropdown");
+            const isOpen = parent.classList.toggle("is-open");
+            if (!isOpen) {
+              parent.classList.remove("is-open");
+            }
+          });
+        });
+
+        document.addEventListener("click", (evt) => {
+          if (!nav.contains(evt.target)) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener("keydown", (evt) => {
+          if (evt.key === "Escape") {
+            closeMenu();
+          }
+        });
+      })();
+    </script>
+  </body>
 </html>
