@@ -432,134 +432,205 @@
         </div>
       </section>
 
- <!-- Why Choose Me -->
-      <section class="section">
-        <div class="container">
-          <div class="grid-2" style="align-items: center">
-            <div>
-              <h2 style="font-size: 36px; margin-bottom: 24px">
-                Why senior leaders trust me
-              </h2>
-              <p style="font-size: 18px; margin-bottom: 32px">
-                You need someone who can take a vague requirement and turn it
-                into a deployed, production-ready solution without hand-holding.
-              </p>
-              <div style="display: flex; flex-direction: column; gap: 16px">
-                <div style="display: flex; gap: 12px">
-                  <div
-                    style="
-                      width: 24px;
-                      height: 24px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                    "
-                  >
-                    <iconify-icon
-                      icon="lucide:shield-check"
-                      style="font-size: 20px; color: var(--primary)"
-                    ></iconify-icon>
-                  </div>
-                  <div>
-                    <h4 style="font-size: 16px; margin-bottom: 4px">
-                      Direct Communication
-                    </h4>
-                    <p style="font-size: 14px">
-                      No account managers. You speak directly with the engineer.
-                    </p>
-                  </div>
-                </div>
-                <div style="display: flex; gap: 12px">
-                  <div
-                    style="
-                      width: 24px;
-                      height: 24px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                    "
-                  >
-                    <iconify-icon
-                      icon="lucide:clock"
-                      style="font-size: 20px; color: var(--primary)"
-                    ></iconify-icon>
-                  </div>
-                  <div>
-                    <h4 style="font-size: 16px; margin-bottom: 4px">
-                      Timezone Overlap
-                    </h4>
-                    <p style="font-size: 14px">
-                      Flexible hours to sync with US &amp; European teams.
-                    </p>
-                  </div>
-                </div>
-                <div style="display: flex; gap: 12px">
-                  <div
-                    style="
-                      width: 24px;
-                      height: 24px;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                    "
-                  >
-                    <iconify-icon
-                      icon="lucide:zap"
-                      style="font-size: 20px; color: var(--primary)"
-                    ></iconify-icon>
-                  </div>
-                  <div>
-                    <h4 style="font-size: 16px; margin-bottom: 4px">
-                      Ownership Mentality
-                    </h4>
-                    <p style="font-size: 14px">
-                      I treat your product as if it were my own business.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              style="
-                background: #0f172a;
-                color: white;
-                padding: 48px;
-                border-radius: 24px;
-                position: relative;
-              "
-            >
-              <div
-                style="position: absolute; top: 24px; left: 24px; opacity: 0.1"
-              >
-                <iconify-icon
-                  icon="lucide:quote"
-                  style="font-size: 64px"
-                ></iconify-icon>
-              </div>
-              <h3
-                style="
-                  font-size: 28px;
-                  line-height: 1.4;
-                  color: white;
-                  margin-bottom: 24px;
-                  position: relative;
-                  z-index: 1;
-                "
-              >
-                "You're not just hiring a coder. You're hiring a technical
-                partner who cares about ROI."
-              </h3>
-              <p style="color: #94a3b8; font-size: 16px">
-                — My promise to every client.
-              </p>
-            </div>
+      <!-- Why Choose Me -->
+      <section class="trust-section" aria-labelledby="trust-title">
+        <div class="container trust-grid">
+          <div class="trust-copy">
+            <h2 id="trust-title">Why Clients Choose Me</h2>
+            <ul class="trust-points" role="list">
+              <li class="trust-point">
+                <span class="trust-point-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:briefcase"></iconify-icon>
+                </span>
+                <p class="trust-point-text">
+                  Business-focused mindset, not task-based
+                </p>
+              </li>
+              <li class="trust-point">
+                <span class="trust-point-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:layers"></iconify-icon>
+                </span>
+                <p class="trust-point-text">
+                  Strong UX + frontend + SEO understanding
+                </p>
+              </li>
+              <li class="trust-point">
+                <span class="trust-point-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:message-square"></iconify-icon>
+                </span>
+                <p class="trust-point-text">
+                  Clear communication &amp; realistic timelines
+                </p>
+              </li>
+              <li class="trust-point">
+                <span class="trust-point-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:code-2"></iconify-icon>
+                </span>
+                <p class="trust-point-text">
+                  Clean, maintainable code
+                </p>
+              </li>
+              <li class="trust-point">
+                <span class="trust-point-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:megaphone"></iconify-icon>
+                </span>
+                <p class="trust-point-text">
+                  Long-term thinking, not quick fixes
+                </p>
+              </li>
+            </ul>
           </div>
+          <aside class="trust-quote" aria-label="Partnership promise">
+            <span class="trust-quote-mark" aria-hidden="true">
+              <iconify-icon icon="lucide:quote"></iconify-icon>
+            </span>
+            <blockquote>
+              <p>
+                You’re not hiring “just a developer.” You’re hiring someone who understands how websites actually convert and grow.
+              </p>
+            </blockquote>
+            <cite>— My promise to every client.</cite>
+          </aside>
         </div>
       </section>
-      
+            
+      <section class="results-section" aria-labelledby="results-title">
+        <div class="container">
+          <header class="results-header">
+            <h2 id="results-title">Trusted by Clients Worldwide</h2>
+            <p class="results-lead">
+              I’ve delivered thousands of hours of professional frontend work, built long-term client relationships, and maintained consistent 5-star feedback across projects.
+            </p>
+          </header>
+
+          <div class="metrics-grid" role="list">
+            <article class="metric-card" role="listitem">
+              <div class="metric-icon" aria-hidden="true">
+                <iconify-icon icon="lucide:star"></iconify-icon>
+              </div>
+              <p class="metric-value">4.9/5</p>
+              <p class="metric-label">
+                Average rating on Upwork across 50+ completed contracts
+              </p>
+            </article>
+
+            <article class="metric-card" role="listitem">
+              <div class="metric-icon" aria-hidden="true">
+                <iconify-icon icon="lucide:clock-3"></iconify-icon>
+              </div>
+              <p class="metric-value">4,000+</p>
+              <p class="metric-label">
+                Hours worked delivering high-quality frontend solutions
+              </p>
+            </article>
+
+            <article class="metric-card" role="listitem">
+              <div class="metric-icon" aria-hidden="true">
+                <iconify-icon icon="lucide:globe-2"></iconify-icon>
+              </div>
+              <p class="metric-value">Global</p>
+              <p class="metric-label">
+                Clients across US, UK, Australia, and Asia
+              </p>
+            </article>
+
+            <article class="metric-card" role="listitem">
+              <div class="metric-icon" aria-hidden="true">
+                <iconify-icon icon="lucide:repeat-2"></iconify-icon>
+              </div>
+              <p class="metric-value">85%</p>
+              <p class="metric-label">
+                Of projects result in long-term repeat engagements
+              </p>
+            </article>
+          </div>
+
+          <section class="client-logos" aria-labelledby="client-logos-title">
+            <h3 class="client-logos-title">Companies I have Worked With</h3>
+            <ul class="client-logo-list" role="list">
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/cropped-gasido-logo-freigestellt.png.webp" alt="Gasido" />
+              </li>
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/iprov-logo.webp" alt="iProv" />
+              </li>
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/petpeed.webp" alt="Petpeed" />
+              </li>
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/club-travel.avif" alt="Club Travel" />
+              </li>
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/evergreen.png" alt="Evergreen" />
+              </li>
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/flea.avif" alt="Flea" />
+              </li>
+              <li class="client-logo" role="listitem">
+                <img src="assets/client-logos/marcus-tennis-club.png" alt="Marcus Tennis Club" />
+              </li>
+            </ul>
+          </section>
+
+
+          <div class="results-divider" role="presentation"></div>
+          <section class="testimonials-section" aria-labelledby="testimonials-title">
+            <div class="testimonials-header">
+              <h3 id="testimonials-title">Client Testimonials</h3>
+              <p class="testimonials-subtitle">
+                What clients have shared after working together.
+              </p>
+            </div>
+
+            <div class="testimonials-grid" role="list">
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:quote"></iconify-icon>
+                </div>
+                <p class="quote-text">
+                  “I hired Durgesh as a UX Enginner and frontend developer for a project. He was always reliable, met timelines, and delivered high-quality work. I can confidently recommend him.”
+                </p>
+                <div class="author-info">
+                  <span class="author-name">Thomas Obkircher</span>
+                  <span class="author-role">Founder / CTO, gasido GmbH (Germany)</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:quote"></iconify-icon>
+                </div>
+                <p class="quote-text">
+                  “Finding strong technical skills is one thing. Finding someone who also understands UX and long-term stability is harder. Durgesh worked with our team and made a measurable difference early on.”
+                </p>
+                <div class="author-info">
+                  <span class="author-name">RJ Martino</span>
+                  <span class="author-role">President & Co-Founder, iProv, LLC. AR, USA</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-icon" aria-hidden="true">
+                  <iconify-icon icon="lucide:quote"></iconify-icon>
+                </div>
+                <p class="quote-text">
+                  “An absolute professional who integrates seamlessly with our internal team. The code quality is top-notch and documentation is always thorough.”
+                </p>
+                <div class="author-info">
+                  <span class="author-name">Jarrett Bilicek</span>
+                  <span class="author-role">Entrepreneur, B3 Global Holdings, LLC. Houston, TX, USA</span>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
 
     </main>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
     <script src="js/nav.js" defer></script>
   </body>
 </html>
+
+
+
