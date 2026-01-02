@@ -1,3 +1,34 @@
 /* ================================
    Page-level styles
    ================================ */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background-color: var(--background);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px var(--pad);
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-copy,
+.footer-built {
+  margin: 0;
+  color: var(--muted-foreground);
+}
+
+@media (max-width: 720px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 28px var(--pad);
+  }
+}
