@@ -527,3 +527,20 @@
     border-radius: 10px;
   }
 }
+
+/* Badges: small inline status tags */
+.badge {
+display: inline-flex;
+align-items: center;
+padding: 4px 12px;
+border-radius: var(--radius-xl);
+font-size: 12px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+
+.badge-blue {
+background-color: rgba(31, 106, 225, 0.1);
+color: var(--primary);
+}
