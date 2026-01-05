@@ -33,12 +33,16 @@
   }
 }
 
-
-
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 48px;
+}    
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 
 .grid-4 {

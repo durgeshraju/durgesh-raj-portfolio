@@ -259,10 +259,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 42px;
-  padding: 0 20px;
+  height: 48px;
+  padding: 0 32px;
   border-radius: var(--radius-sm);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   cursor: pointer;
   white-space: nowrap;
@@ -277,7 +277,7 @@
 
 /* Primary CTA variant */
 .btn-primary {
-  background: linear-gradient(135deg, #1f6ae1 0%, #1f7af3 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #1f7af3 100%);
   color: var(--primary-foreground);  
 }
 
@@ -291,16 +291,16 @@
 
 .btn-secondary {
   background-color: #ffffff;
-  color: #1f6ae1;
-  border: 1px solid #DAE0E8;  
+  color: var(--primary);
+  border: 1px solid var(--primary);
   transition: box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
   background-color: rgba(31, 106, 225, 0.08);
-  border-color: #1f6ae1;
-  color: #1f6ae1;
+  border-color: var(--primary);
+  color: var(--primary);
   box-shadow: 0 10px 22px rgba(15, 61, 94, 0.12);
 }
 
@@ -500,5 +500,30 @@
   .header-cta {
     border-radius: var(--radius-xl);
     padding: 0 16px;
+  }
+}
+
+
+/* Reusable CTA/button group */
+.cta-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .cta-group { gap: 12px; }
+}
+
+@media (max-width: 720px) {
+  .cta-group {
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+  }
+  .cta-group .btn {
+    width: 100%;
+    border-radius: 10px;
   }
 }
