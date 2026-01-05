@@ -351,6 +351,93 @@ color: var(--primary);
   line-height: 1.6;
   margin: 0;
 }
+
+/* Process section */
+.process-grid {
+  align-items: flex-start;
+}
+
+.process-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.process-step-number {
+  font-size: 48px;
+  color: rgba(31, 106, 225, 0.2);
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 16px;
+}
+
+.process-step-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.process-step-text {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.process-callout {
+  background: var(--accent);
+  color: #ffffff;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+}
+
+.process-callout-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.process-callout-text {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.process-check-icon {
+  color: #63a4ff;
+}
+
+.process-check-inner {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-check-symbol {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .process-callout {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .process-title {
+    font-size: 28px;
+  }
+
+  .process-callout {
+    padding: 32px;
+  }
+
+  .process-callout-title {
+    font-size: 22px;
+  }
+}
 /* Experience section */
 .experience-title {  
   margin-bottom: 24px;
