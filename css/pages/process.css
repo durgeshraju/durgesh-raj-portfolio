@@ -102,6 +102,75 @@ color: var(--primary);
   text-align: center;
 }
 
+.partnership-intro {
+  max-width: 700px;
+  margin: 0 auto 64px auto;
+}
+
+.partnership-title {
+  margin-bottom: 16px;
+}
+
+.partnership-lead {
+  margin: 0;
+}
+
+.partnership-card-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.partnership-card-title-accent {
+  color: var(--primary);
+}
+
+.values-grid {
+  gap: 80px;
+}
+
+.values-title {
+  margin-bottom: 32px;
+  color: var(--accent);
+}
+
+.values-list {
+  display: grid;
+  gap: 32px;
+}
+
+.values-item-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.values-item-text {
+  margin: 0;
+}
+
+.values-card {
+  border: none;
+  background: #ffffff;
+}
+
+.values-dont-item {
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.values-dont-icon {
+  color: var(--muted-foreground);
+}
+
+.values-quote {
+  margin-top: 24px;
+  font-size: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  color: var(--foreground);
+}
+
 /* Responsive typography */
 @media (max-width: 960px) {
   h1 {
@@ -214,6 +283,9 @@ color: var(--primary);
     flex-shrink: 0;
     margin-top: 2px;
 }
+.list-check .values-dont-icon {
+    color: var(--muted-foreground);
+}
 .step-icon {
     width: 48px;
     height: 48px;
@@ -224,4 +296,38 @@ color: var(--primary);
     justify-content: center;
     color: var(--deep-blue);
     margin-bottom: 16px;
+}
+
+
+.card {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+}
+.cta-section {
+    background-color: var(--deep-blue);
+    color: white;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    padding: 80px 24px;
+}
+.cta-section h2 {
+    color: white;
+    margin-bottom: 16px;
+}
+.cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.feature-grid.values-grid {
+    gap: 80px;
 }
