@@ -309,3 +309,104 @@ color: var(--primary);
   margin: 0 auto;
   line-height: 1.6;
 }
+
+/* Clients trust section */
+.clients-title {  
+  margin-bottom: 16px;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.clients-lead {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--muted-foreground);
+  max-width: inherit;
+}
+
+.card-soft {
+  border: none;
+  background: var(--secondary);
+}
+
+.feature-icon-light {
+  background: #fff;
+}
+
+.feature-icon-inner {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-card-title {
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.clients-card-text {
+  line-height: 1.6;
+  margin: 0;
+}
+/* Experience section */
+.experience-title {  
+  margin-bottom: 24px;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+.experience-lead {
+  font-size: 18px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+}
+
+.experience-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.experience-badge {
+  background: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.experience-badge-icon {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.experience-rating {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.experience-icon {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.experience-item-title {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: var(--accent);
+}
+
+.experience-item-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
