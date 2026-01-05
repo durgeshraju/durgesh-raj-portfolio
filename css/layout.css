@@ -45,8 +45,36 @@
   gap: 32px;
 }
 
+@media (max-width: 960px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
+
+/* Shared utilities: text alignment and spacing */
+
+.text-center {
+    text-align: center;
+}
+
+.mb-lg {
+    margin-bottom: 64px;
+}
+
+.mb-md {
+    margin-bottom: 32px;
 }
