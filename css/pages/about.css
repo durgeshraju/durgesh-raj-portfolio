@@ -248,8 +248,7 @@ color: var(--primary);
 }
 
 /* Problem section typography and icons */
-.problem-title {
-  font-size: 40px;
+.problem-title {  
   margin-bottom: 24px;
   color: var(--accent);
   letter-spacing: -0.01em;
