@@ -1,7 +1,4 @@
 
-    .section-spacing {
-        padding: 100px 0;
-    }
 
     .bg-secondary {
         background-color: var(--secondary);
@@ -164,5 +161,55 @@
     @media (max-width: 480px) {
         .service-hero-title {
             font-size: 30px;
+        }
+    }
+
+    /* Value prop introduction section */
+    .service-intro {
+        /* Keeps the section aligned with other service blocks */
+        padding: 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .service-intro-container {
+        /* Constrains the copy width for readability */
+        max-width: 800px;
+    }
+
+    .service-intro-title {
+        /* Clear secondary heading hierarchy under the hero */
+        font-size: 32px;
+        margin-bottom: 24px;
+        line-height: 1.25;
+    }
+
+    .service-intro-text {
+        /* Comfortable paragraph size for scanning */
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .service-intro-text:last-of-type {
+        margin-bottom: 0;
+    }
+
+    /* Responsive adjustments for the intro section */
+    @media (max-width: 768px) {
+        .service-intro {
+            padding: 64px 0;
+        }
+
+        .service-intro-title {
+            font-size: 28px;
+        }
+
+        .service-intro-text {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .service-intro {
+            padding: 0;
         }
     }
