@@ -1,0 +1,168 @@
+
+    .section-spacing {
+        padding: 100px 0;
+    }
+
+    .bg-secondary {
+        background-color: var(--secondary);
+    }
+
+    .card {
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 32px;
+        height: 100%;
+    }
+
+    .grid-cols-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+
+    .grid-cols-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+    .check-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    /* Helper utilities */
+    .text-center {
+        text-align: center;
+    }
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mb-2 {
+        margin-bottom: 8px;
+    }
+    .mb-4 {
+        margin-bottom: 16px;
+    }
+    .mb-6 {
+        margin-bottom: 24px;
+    }
+    .mb-8 {
+        margin-bottom: 32px;
+    }
+    .mb-12 {
+        margin-bottom: 48px;
+    }
+    .flex {
+        display: flex;
+    }
+    .items-center {
+        align-items: center;
+    }
+    .justify-between {
+        justify-content: space-between;
+    }
+    .gap-4 {
+        gap: 16px;
+    }
+    .gap-8 {
+        gap: 32px;
+    }
+    .font-medium {
+        font-weight: 500;
+    }
+
+    /* Specific text colors from spec */
+    .text-deep-blue {
+        color: var(--deep-blue);
+    }
+    .text-accent {
+        color: var(--primary);
+    }
+    .text-dark {
+        color: #1a1a1a;
+    }
+
+    
+    /* Custom website development hero section */
+    .service-hero-grid {
+        /* Keeps headline and media aligned without inline styles */
+        align-items: center;
+        gap: 64px;
+    }
+
+    .service-hero-title {
+        /* Prominent H1 sizing for scanning and SEO relevance */
+        font-size: 48px;
+        margin-bottom: 24px;
+        line-height: 1.15;
+    }
+
+    .service-hero-text {
+        /* Comfortable reading width for hero copy */
+        font-size: 18px;
+        max-width: 540px;
+        margin-bottom: 32px;
+        color: var(--foreground);
+    }
+
+    /* Hero media container keeps a 4:3 ratio without inline styles */
+    .service-hero-media {
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 4 / 3;
+    }
+
+    .service-hero-image {
+        /* Prevents layout shift and crops cleanly on resize */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Responsive adjustments for the hero layout */
+    @media (max-width: 1024px) {
+        .service-hero-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .service-hero-title {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .service-hero-title {
+            font-size: 34px;
+        }
+
+        .service-hero-text {
+            font-size: 16px;
+        }
+
+        .service-hero-actions {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .service-hero-actions .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .service-hero-title {
+            font-size: 30px;
+        }
+    }
